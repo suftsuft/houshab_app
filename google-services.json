@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "779590847793",
+    "project_id": "hwshab-data",
+    "storage_bucket": "hwshab-data.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779590847793:android:13a73356ff0e4c5df67410",
+        "android_client_info": {
+          "package_name": "houshab_data_android.data"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk7VcPbGgRNpm-7kuFKEVhYrmh7jOm8BU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
