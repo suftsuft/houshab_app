@@ -9,9 +9,14 @@ jobs:
         with:
           flutter-version: '3.x'
       - run: |
+          # إنشاء هيكل المشروع وترتيب الملفات
           flutter create . --overwrite --org houshab_data_android
+          mkdir -p lib
+          # نقل ملف الماين إذا كان خارج مجلد lib
+          [ -f main.dart ] && mv main.dart lib/main.dart || true
           mkdir -p android/app
-          cp google-services.json android/app/ || true
+          # نقل ملف الجيسون للمكان الصحيح
+          cp google-services.json android/app/google-services.json || true
           flutter pub get
           flutter build apk --release --no-tree-shake-icons
       - name: Upload APK
