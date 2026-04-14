@@ -1,5 +1,0 @@
-<manifest xmlns:android="http://android.com" package="houshab_data_android.data">
-    <application android:label="houshab_app" android:icon="@mipmap/ic_launcher">
-        <activity android:name=".MainActivity" android:exported="true""")/>>
-    </application>
-</manifest>
