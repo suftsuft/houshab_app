@@ -11,7 +11,7 @@ jobs:
       - run: |
           flutter create . --overwrite --org com.houshab
           mkdir -p android/app
-          [ -f google-services.json ] && cp google-services.json android/app/ || true
+          [ -f google-services.json ] && cp google-services.json android/app/google-services.json || true
           sed -i 's/minSdkVersion .*/minSdkVersion 21/' android/app/build.gradle
           flutter pub get
           flutter build apk --release --no-tree-shake-icons
@@ -20,3 +20,4 @@ jobs:
         with:
           name: my-app-apk
           path: build/app/outputs/flutter-apk/app-release.apk
+          
